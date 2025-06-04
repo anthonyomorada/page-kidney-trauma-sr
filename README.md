@@ -20,4 +20,4 @@ If you use this data or figures, please cite:
 > Morada AO, Droney AC, Matera D, Lopez R. *Page Kidney by Bilateral Hematomas: A Systematic Review and Case Report.* 2025.
 
 ## 📬 Contact
-For inquiries or collaboration: **aomorada@gmail.com**
+For inquiries or collaboration: **anthony.omorada@gmail.com*
