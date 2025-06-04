@@ -1,0 +1,19 @@
+# Python
+__pycache__/
+*.py[cod]
+*.ipynb_checkpoints
+
+# Docs & Manuscript
+*.docx
+*.pdf
+*.log
+*.aux
+*.out
+*.bbl
+*.blg
+*.synctex.gz
+
+# System
+.DS_Store
+Thumbs.db
+.env
