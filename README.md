@@ -1,6 +1,3 @@
-# page-kidney-trauma-sr
-Case and review: bilateral perinephric hematomas causing Page kidney—systematic review with surgical insight.
-
 # Page Kidney by Bilateral Hematomas  
 ### A Systematic Review of the Page Kidney Phenomenon Following Trauma
 
