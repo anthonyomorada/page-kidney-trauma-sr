@@ -16,7 +16,7 @@ Matlaga_2002,y,y,2002,16,m,none,NA,blunt,flank pain,y,hematuria,NA,NA,urinoma,bi
 Mattson_2021,y,y,2021,31,m,seizure,0.038461538,blunt,fatigue; back pain; nausea; hematemesis,n,NA,NA,NA,hematoma,left,IR drainage; splenic vein stent ,s,0.083333333,AM,MKL
 Minagawa_2009,y,y,2009,17,m,none,0.08,blunt,Flank pain; hematuria; hypertension,y,hematuria,NA,NA,lymphocele,right,Percutaneous drainage + laparoscopic fenestration,s,1.5,AM,MKL
 Moriarty_1997,y,y,1997,16,m,none,1,mvc,headache,y,NA,NA,7,hematoma,left,surgical evacuation,s,3.166666667,AM,MKL
-Mullins_1975,y,y,1975,17,m,none,1,blunt,"headache; back pain, flank pain, fatigue ",y,negative,NA,11,"hematoma, methyldopa, HCTZ, propranlol, hydralazine",right,nephrectomy,,,AM,MKL
+Mullins_1975,y,y,1975,17,m,none,1,blunt,"headache; back pain, flank pain, fatigue ",y,negative,NA,11,hematoma,right,nephrectomy,,,AM,MKL
 Murray_2010,y,y,2010,48,m,none,0,fall,flank pain; hematuria,y,hematuria,NA,NA,hematoma,left,surgical evacuation/laparotomy; complete nephrectomy ,s,NA,AM,MKL
 Myrianthefs_2007,y,y,2007,24,m,none,0.021917808,mvc,"abdominal pain, distension, ",n,hematuria,NA,NA,NA,right,clonidine; captopril; propranalol,s,1,AM,MKL
 Oliveira_2003,y,y,2003,23,m,none,3,blunt,"flank pain, ecchymosis ",y,negative,NA,7.5,hematoma,left,total nephrectomy ,s,1,AM,MKL
@@ -26,8 +26,8 @@ Scott_1976,n,not-available,1976,,,,,,,,,,,,,,,,AM,MKL
 Sedigh_2017,y,y,2017,67,m,renal txp (glomerulonephritis) ,0.041666667,blunt,anuria; abdominal pain,n,NA,NA,4,hematoma,"allograft, right",decortication,s,0.024657534,AM,MKL
 Shome_2002,n,not-available,2002,,,,,,,,,,,,,,,,AM,MKL
 Smyth_2012,y,patient level,2012,,,,,,,,,,,,,,,,AM,MKL
-Sokhal_2018-1,y,y-1,2018,24,m,none,6,mvc,flank pain; headache,y,NA,NA,18,hematoma,left,lap nephrectomy,s,0.019178082,AM,MKL
-Sokhal_2018-2,y,y-2,2018,21,m,none,2,fall,"flank pain, palpations, headache ",y,negative,NA,12,hematoma,right,lap evacuation; lap nephrectomy,s,0.25,AM,MKL
+Sokhal_2018,y,y-1,2018,24,m,none,6,mvc,flank pain; headache,y,NA,NA,18,hematoma,left,lap nephrectomy,s,0.019178082,AM,MKL
+Sokhal_2018,y,y-2,2018,21,m,none,2,fall,"flank pain, palpations, headache ",y,negative,NA,12,hematoma,right,lap evacuation; lap nephrectomy,s,0.25,AM,MKL
 Takahashi_2017,y,y,2017,67,m,renal txp (chronic glomerulonephritis) ,0.019178082,blunt,abdominal pain,y,negative,II,12,hematoma,"allograft, left ",surgical evacuation,s,NA,AM,MKL
 Tuong_2016,y,y,2016,9,m,congenital atrophic right kidney,0.016438356,blunt,abdominal pain; hematuria,y,hematuria,IV,NA,hematoma,left,"surgical evacuation, debridement, renorrhapy",s,0.083333333,AM,MKL
 van Ahlen_1987,y,patient level,1987,,,,,,,,,,,,,,,,AM,MKL
