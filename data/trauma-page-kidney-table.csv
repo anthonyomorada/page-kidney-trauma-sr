@@ -1,0 +1,36 @@
+﻿reference,pdf,include,year,age,gender,pmh,onset-y,mechanism,ss,hypertension,ua,grade,size-cm,page-type,laterality,treatment,fu-status,fu-y,review-1,review-2
+Aragona_1991,y,y,1991,25,m,none,9,mvc,asymptomatic,y,negative,NA,6.6,hematoma,left,decortication,s,3,AM,MKL
+Arai_1981,n,not-available,1981,,,,,,,,,,,,,,,,AM,MKL
+Babel_2010,y,y,2010,89,m,htn; dm; chronic renal insufficiency; cad,0.25,fall,abdominal pain; nausea; vomiting,y,NA,NA,15,hematoma,left,conservative; labetolol; felodipine; furosemide; nitroprusside; prbc,s,0.75,AM,MKL
+Barns_2022,y,path,2022,20s,m,none,,blunt,"flank pain, drop in Hgb, fevers ",,hematuria,3,1.25,hematoma,left,"Uretric stent, Abx, percutaneous drainage, nephrectomy ",s,,AM,MKL
+Benendo-Kapuscinska_1999,n,not-available,1999,,,,,,,,,,,,,,,,AM,MKL
+Boggi_1998,y,y,1998,15,m,congentially absent left kidney,0.333333333,blunt,abdominal pain,y,NA,NA,NA,hematoma,right,"US drainage, fine needle aspirations x3",s,9,AM,MKL
+El Madhoun_2009,y,path,2009,26,m,none,7 days,blunt,"flank pain, adbominal pain ",n,,,15,hematoma,right ,"decortication, nephrectomy ",s,,AM,MKL
+Estrada_2019,n,not-available,2019,,,,,,,,,,,,,,,,AM,MKL
+Hoshiyama_2009,n,not-available,2009,,,,,,,,,,,,,,,,AM,MKL
+Kumar_2015,y,y,2015,66,m,"renal txp (2 years prior); dm, polyneuropathy",0.008219178,fall,chest pain,y,negative,NA,11,hematoma,allograft right,"surgical evacuation with hematoma evacuation, drain, hemostatic agents",s,0.008219178,AM,MKL
+Lin_2020,y,y,2019,46,f,none,0.166666667,blunt,back pain,y,NA,NA,15,hematoma,left,US drainage,s,0.25,AM,MKL
+Marcou_2021,y,y,2021,16,m,none,0.01642711,mvc,asymptomatic,y,NA,V,NA,hematoma,right,ureteral stet; conservative; amlodipine; prbc,s,0.4166667,AM,MKL
+Massumi_1969,y,y,1969,16,m,none,0.008219178,fall,hematuria; flank pain,y,hematuria,NA,NA,hematoma,right,conservative,s,0.5,AM,MKL
+Matlaga_2002,y,y,2002,16,m,none,NA,blunt,flank pain,y,hematuria,NA,NA,urinoma,bilateral,lisinopril; ureteral stent placement,s,0.333333333,AM,MKL
+Mattson_2021,y,y,2021,31,m,seizure,0.038461538,blunt,fatigue; back pain; nausea; hematemesis,n,NA,NA,NA,hematoma,left,IR drainage; splenic vein stent ,s,0.083333333,AM,MKL
+Minagawa_2009,y,y,2009,17,m,none,0.08,blunt,Flank pain; hematuria; hypertension,y,hematuria,NA,NA,lymphocele,right,Percutaneous drainage + laparoscopic fenestration,s,1.5,AM,MKL
+Moriarty_1997,y,y,1997,16,m,none,1,mvc,headache,y,NA,NA,7,hematoma,left,surgical evacuation,s,3.166666667,AM,MKL
+Mullins_1975,y,y,1975,17,m,none,1,blunt,"headache; back pain, flank pain, fatigue ",y,negative,NA,11,"hematoma, methyldopa, HCTZ, propranlol, hydralazine",right,nephrectomy,,,AM,MKL
+Murray_2010,y,y,2010,48,m,none,0,fall,flank pain; hematuria,y,hematuria,NA,NA,hematoma,left,surgical evacuation/laparotomy; complete nephrectomy ,s,NA,AM,MKL
+Myrianthefs_2007,y,y,2007,24,m,none,0.021917808,mvc,"abdominal pain, distension, ",n,hematuria,NA,NA,NA,right,clonidine; captopril; propranalol,s,1,AM,MKL
+Oliveira_2003,y,y,2003,23,m,none,3,blunt,"flank pain, ecchymosis ",y,negative,NA,7.5,hematoma,left,total nephrectomy ,s,1,AM,MKL
+Oliveira_2002,y,duplicate,2002,,,,,,,,,,,,,,,,AM,MKL
+Pan_2020,y,y,2020,34,m,dm;  hx  renal/pancreas transplants ,0.083333333,blunt,oligouria; abdominal pain,y,NA,NA,7.4,hematoma,"allograft, left ",decortication,s,1,AM,MKL
+Scott_1976,n,not-available,1976,,,,,,,,,,,,,,,,AM,MKL
+Sedigh_2017,y,y,2017,67,m,renal txp (glomerulonephritis) ,0.041666667,blunt,anuria; abdominal pain,n,NA,NA,4,hematoma,"allograft, right",decortication,s,0.024657534,AM,MKL
+Shome_2002,n,not-available,2002,,,,,,,,,,,,,,,,AM,MKL
+Smyth_2012,y,patient level,2012,,,,,,,,,,,,,,,,AM,MKL
+Sokhal_2018-1,y,y-1,2018,24,m,none,6,mvc,flank pain; headache,y,NA,NA,18,hematoma,left,lap nephrectomy,s,0.019178082,AM,MKL
+Sokhal_2018-2,y,y-2,2018,21,m,none,2,fall,"flank pain, palpations, headache ",y,negative,NA,12,hematoma,right,lap evacuation; lap nephrectomy,s,0.25,AM,MKL
+Takahashi_2017,y,y,2017,67,m,renal txp (chronic glomerulonephritis) ,0.019178082,blunt,abdominal pain,y,negative,II,12,hematoma,"allograft, left ",surgical evacuation,s,NA,AM,MKL
+Tuong_2016,y,y,2016,9,m,congenital atrophic right kidney,0.016438356,blunt,abdominal pain; hematuria,y,hematuria,IV,NA,hematoma,left,"surgical evacuation, debridement, renorrhapy",s,0.083333333,AM,MKL
+van Ahlen_1987,y,patient level,1987,,,,,,,,,,,,,,,,AM,MKL
+GWV_2023,y,y,2023,54,m,none,0.010958904,mvc,"back pain, abdominal pain",y,hematuria,NA,,hematoma,bilateral,"bilateral gerota fascia release, surgical evacuation ",s,0.166666667,AM,MKL
+Koyanagawa_2024,y,y,2024,26,m,asthma; tibial fracture; marijuana use,0.003,blunt,"flank pain, vomiting, hypertension",y,trace blood,NA,12,hematoma,right,IR coil embolization,s,NA,AM,MKL
+Lind_2024,y,y,2024,54,m,"sleep apnea-induced htn (CPAP, amlodipine, HCTZ-losartan)",0.003,fall,Flank pain; nausea; syncope; hypertension; AKI,y,NA,NA,NA,hematoma,left,"CT perc drain, tPA, fibrinolysis, 1uprbc, discharged on PTA anti-HTN meds, tadalafil, brompheniramine/dextromethorphen/PSE, topical docosanol",s,0.037037037,AM,MKL
