@@ -3,6 +3,10 @@ title: "Trauma-Associated Page Kidney: A Systematic Review and Data Analysis"
 author: "Anthony Onde Morada, MD"
 date: "`r format(Sys.Date(), '%B %d, %Y')`"
 output:
+  html_document:
+    toc: true
+    toc_depth: '3'
+    df_print: paged
   pdf_document:
     toc: true
     toc_depth: 3
@@ -12,10 +16,6 @@ output:
     fig_height: 5
     latex_engine: xelatex
     keep_tex: false
-  html_document:
-    toc: true
-    toc_depth: '3'
-    df_print: paged
 always_allow_html: true
 ---
 
@@ -145,6 +145,158 @@ exclusion_summary %>%
 
 **Excluded references:** `r paste(exdf$reference, collapse = ", ")`
 
+# Publication Patterns
+```{r study-patterns}
+# Page Kidney Systematic Review: Publication Year Analysis
+# Load required libraries
+years <- df$year
+# Basic descriptive statistics
+basic_stats <- data.frame(
+  Statistic = c("Total papers", "Min year", "Max year", "Year span", "Mean year", "Median year"),
+  Value = c(
+    length(years),
+    min(years),
+    max(years),
+    max(years) - min(years),
+    round(mean(years), 1),
+    median(years)
+  )
+)
+
+print("=== BASIC STATISTICS ===")
+kable(basic_stats, caption = "Basic Publication Statistics")
+
+# Frequency distribution by decade
+decade_freq <- years %>%
+  sapply(function(x) floor(x/10) * 10) %>%
+  table() %>%
+  as.data.frame()
+names(decade_freq) <- c("Decade", "Papers")
+decade_freq$Decade <- paste0(decade_freq$Decade, "s")
+
+print("=== FREQUENCY BY DECADE ===")
+kable(decade_freq, caption = "Publications by Decade")
+
+# Era analysis
+era_breaks <- c(1969, 2000, 2010, 2020, 2025)
+era_labels <- c("Pre-2000", "2000-2009", "2010-2019", "2020-2024")
+
+era_analysis <- data.frame(
+  Era = era_labels,
+  Papers = c(
+    sum(years < 2000),
+    sum(years >= 2000 & years < 2010),
+    sum(years >= 2010 & years < 2020),
+    sum(years >= 2020)
+  )
+)
+era_analysis$Percentage <- round((era_analysis$Papers / length(years)) * 100, 1)
+era_analysis$Rate_per_year <- c(
+  era_analysis$Papers[1] / 31,  # 1969-1999 = 31 years
+  era_analysis$Papers[2] / 10,  # 2000-2009 = 10 years
+  era_analysis$Papers[3] / 10,  # 2010-2019 = 10 years
+  era_analysis$Papers[4] / 5    # 2020-2024 = 5 years
+)
+era_analysis$Rate_per_year <- round(era_analysis$Rate_per_year, 2)
+
+print("=== ERA DISTRIBUTION ===")
+kable(era_analysis, caption = "Publications by Era with Rates")
+
+# Recent years analysis (2015-2024)
+recent_years <- 2015:2024
+recent_counts <- sapply(recent_years, function(x) sum(years == x))
+recent_analysis <- data.frame(
+  Year = recent_years,
+  Papers = recent_counts
+)
+
+print("=== RECENT PUBLICATION PATTERN (2015-2024) ===")
+kable(recent_analysis, caption = "Year-by-Year Publications (2015-2024)")
+
+# Visualization: Publications over time
+# Create a complete time series
+year_counts <- table(factor(years, levels = min(years):max(years)))
+year_df <- data.frame(
+  Year = as.numeric(names(year_counts)),
+  Papers = as.numeric(year_counts)
+)
+
+# Plot 1: Publications by year
+p1 <- ggplot(year_df, aes(x = Year, y = Papers)) +
+  geom_col(fill = "steelblue", alpha = 0.7) +
+  geom_smooth(method = "loess", se = TRUE, color = "red", linetype = "dashed") +
+  labs(
+    title = "Page Kidney Publications by Year (1969-2024)",
+    x = "Publication Year",
+    y = "Number of Publications",
+    caption = "Trend line shows increasing publication activity over time"
+  ) +
+  theme_minimal() +
+  theme(
+    plot.title = element_text(hjust = 0.5, size = 14, face = "bold"),
+    axis.text.x = element_text(angle = 45, hjust = 1)
+  ) +
+  scale_x_continuous(breaks = seq(1970, 2024, 5))
+
+print(p1)
+
+# Plot 2: Publications by era
+p2 <- ggplot(era_analysis, aes(x = Era, y = Papers)) +
+  geom_col(fill = "darkgreen", alpha = 0.7) +
+  geom_text(aes(label = paste0(Papers, " (", Percentage, "%)")), 
+            vjust = -0.5, size = 3.5) +
+  labs(
+    title = "Page Kidney Publications by Era",
+    x = "Time Period",
+    y = "Number of Publications",
+    caption = "Percentages show proportion of total publications"
+  ) +
+  theme_minimal() +
+  theme(
+    plot.title = element_text(hjust = 0.5, size = 14, face = "bold"),
+    axis.text.x = element_text(angle = 45, hjust = 1)
+  ) +
+  ylim(0, max(era_analysis$Papers) * 1.15)
+
+print(p2)
+
+# Summary statistics for text
+cat("\n=== KEY FINDINGS FOR MANUSCRIPT ===\n")
+cat("• Research spans", max(years) - min(years), "years (", min(years), "-", max(years), ")\n")
+cat("• Mean publication year:", round(mean(years), 1), "\n")
+cat("• Median publication year:", median(years), "\n")
+cat("•", round(sum(years >= 2010) / length(years) * 100, 1), "% of papers published in last 15 years (2010-2024)\n")
+cat("• Publication rate increased from", round(sum(years >= 2000 & years < 2010) / 10, 1), 
+    "papers/year (2000s) to", round(sum(years >= 2020) / 5, 1), "papers/year (2020s)\n")
+cat("• Peak activity in 2010s with", sum(years >= 2010 & years < 2020), "publications\n")
+cat("• Most productive individual years: 2017, 2018, 2021, 2024 (≥2 papers each)\n")
+
+# Create summary table for manuscript
+manuscript_summary <- data.frame(
+  Metric = c(
+    "Total publications",
+    "Publication span (years)",
+    "Mean publication year",
+    "Median publication year", 
+    "Publications 2010-2024 (%)",
+    "Publication rate 2000-2009 (per year)",
+    "Publication rate 2020-2024 (per year)"
+  ),
+  Value = c(
+    length(years),
+    paste0(max(years) - min(years), " (", min(years), "-", max(years), ")"),
+    round(mean(years), 1),
+    median(years),
+    paste0(sum(years >= 2010), " (", round(sum(years >= 2010) / length(years) * 100, 1), "%)"),
+    round(sum(years >= 2000 & years < 2010) / 10, 1),
+    round(sum(years >= 2020) / 5, 1)
+  )
+)
+
+cat("\n=== MANUSCRIPT SUMMARY TABLE ===\n")
+kable(manuscript_summary, caption = "Publication Characteristics Summary")
+
+```
 
 # Patient Demographics and Baseline Characteristics
 
@@ -862,7 +1014,7 @@ df <- df %>%
   left_join(treatment_cleaned, by = "id")
 
 # Making final table
-df_final <- df %>%
+df <- df %>%
   select(
     reference, year, age, gender,
     pmh = pmh.y,
@@ -871,13 +1023,180 @@ df_final <- df %>%
     hypertension,
     ua = ua_result,
     grade, size.cm, page.type, laterality,
-    treatment = treatment_summary,
+    treatment = treatment_summary, 
     fu.status, fu.y
   )
 
 # Export cleaned data
-write.csv(df_final, "data/pk-clean.csv", row.names = FALSE)
+write.csv(df, "data/tpk-table.csv", row.names = FALSE)
 
 # Cleaning workspace
 rm(list = setdiff(ls(), "df"))
+
+```
+
+
+# Table 1
+
+```{r table1}
+
+# Clean and format the data for Table 1, using "NR" for missing data
+table1 <- df %>%
+  mutate(
+    # Clean reference formatting
+    Reference = gsub("_", " et al., ", reference),
+
+    # Format year
+    Year = year,
+
+    # Format age
+    Age = ifelse(is.na(age) | age == "NA" | age == "Not reported", "NR", age),
+
+    # Clean gender
+    Gender = case_when(
+      gender == "m" ~ "Male",
+      gender == "f" ~ "Female",
+      is.na(gender) | gender == "NA" | gender == "Not reported" ~ "NR",
+      TRUE ~ gender
+    ),
+
+    # Clean past medical history
+    `Past Medical History` = ifelse(is.na(pmh) | pmh == "NA" | pmh == "Not reported", "NR", pmh),
+
+    # Format onset time with day-level resolution for very short intervals
+    `Time to Onset` = case_when(
+      is.na(onset.y) | onset.y == "NA" | onset.y == "Not reported" ~ "NR",
+      onset.y < (1/12) ~ paste0(round(onset.y * 365), " days"),
+      onset.y < 1 ~ paste0(round(onset.y * 12, 1), " months"),
+      onset.y == 1 ~ "1 year",
+      onset.y > 1 ~ paste0(round(onset.y, 1), " years"),
+      TRUE ~ "NR"
+    ),
+
+    # Clean mechanism
+    `Injury Mechanism` = case_when(
+      is.na(mechanism) | mechanism == "NA" | mechanism == "Not reported" ~ "NR",
+      mechanism == "mvc" ~ "Motor vehicle collision",
+      mechanism == "fall" ~ "Fall",
+      mechanism == "blunt" ~ "Blunt trauma",
+      TRUE ~ mechanism
+    ),
+
+    # Clean signs and symptoms
+    `Signs & Symptoms` = ifelse(is.na(ss) | ss == "NA" | ss == "Not reported", "NR", ss),
+
+    # Format hypertension
+    Hypertension = case_when(
+      hypertension == TRUE ~ "Yes",
+      hypertension == FALSE ~ "No",
+      is.na(hypertension) | hypertension == "NA" | hypertension == "Not reported" ~ "NR",
+      TRUE ~ as.character(hypertension)
+    ),
+
+    # Clean urinalysis
+    Urinalysis = case_when(
+      is.na(ua) | ua == "NA" | ua == "Not reported" ~ "NR",
+      ua == "Positive" ~ "Abnormal",
+      ua == "Negative" ~ "Normal",
+      TRUE ~ ua
+    ),
+
+    # Clean injury grade
+    `Injury Grade` = ifelse(is.na(grade) | grade == "NA" | grade == "Not reported", "NR", grade),
+
+    # Format size
+    `Size (cm)` = case_when(
+      is.na(size.cm) | size.cm == "NA" | size.cm == "Not reported" ~ "NR",
+      TRUE ~ paste0(size.cm, " cm")
+    ),
+
+    # Clean page kidney type
+    `Page Kidney Type` = case_when(
+      is.na(page.type) | page.type == "NA" | page.type == "Not reported" ~ "NR",
+      page.type == "hematoma" ~ "Hematoma",
+      page.type == "urinoma" ~ "Urinoma",
+      page.type == "lymphocele" ~ "Lymphocele",
+      TRUE ~ page.type
+    ),
+
+    # Clean laterality
+    Laterality = case_when(
+      is.na(laterality) | laterality == "NA" | laterality == "Not reported" ~ "NR",
+      laterality == "left" ~ "Left",
+      laterality == "right" ~ "Right",
+      laterality == "bilateral" ~ "Bilateral",
+      laterality == "allograft right" ~ "Allograft (Right)",
+      laterality == "allograft left" ~ "Allograft (Left)",
+      TRUE ~ laterality
+    ),
+
+    # Clean treatment
+    Treatment = case_when(
+      is.na(treatment) | treatment == "NA" | treatment == "Not reported" ~ "NR",
+      treatment == "Conservative" ~ "Medical management",
+      treatment == "Surgical_Decompression" ~ "Surgical decompression",
+      treatment == "Perc_IR" ~ "Percutaneous intervention",
+      treatment == "Perc_IR; Surgical_Decompression" ~ "Percutaneous intervention + Surgical decompression",
+      treatment == "Perc_IR; Vascular" ~ "Percutaneous intervention + Vascular intervention",
+      treatment == "Urologic" ~ "Urological intervention",
+      treatment == "Nephrectomy" ~ "Nephrectomy",
+      treatment == "Vascular" ~ "Vascular intervention",
+      TRUE ~ treatment
+    ),
+
+    # Clean follow-up status
+    `Follow-up Status` = case_when(
+      fu.status == TRUE ~ "Alive",
+      fu.status == FALSE ~ "NR",
+      is.na(fu.status) | fu.status == "NA" | fu.status == "Not reported" ~ "NR",
+      TRUE ~ "NR"
+    ),
+
+    # Format follow-up duration
+    `Follow-up Duration` = case_when(
+      is.na(fu.y) | fu.y == "NA" | fu.y == "Not reported" ~ "NR",
+      fu.y < 1 ~ paste0(round(fu.y * 12, 1), " months"),
+      fu.y == 1 ~ "1 year",
+      fu.y > 1 ~ paste0(round(fu.y, 1), " years"),
+      TRUE ~ "NR"
+    )
+  ) %>%
+  # Select and reorder columns for final table
+  select(
+    Reference,
+    Year,
+    Age,
+    Gender,
+    `Past Medical History`,
+    `Time to Onset`,
+    `Injury Mechanism`,
+    `Signs & Symptoms`,
+    Hypertension,
+    Urinalysis,
+    `Injury Grade`,
+    `Size (cm)`,
+    `Page Kidney Type`,
+    Laterality,
+    Treatment,
+    `Follow-up Status`,
+    `Follow-up Duration`
+  )
+
+# Display the cleaned table
+kable(table1,
+      caption = "Table 1. Characteristics of Page Kidney Cases in Systematic Review. Data presented as reported in original publications. 'NR' indicates data not reported in the original study. Time to onset refers to time from initial trauma to Page kidney diagnosis. Injury grade refers to renal trauma grading when available. Treatment categories: Medical management includes antihypertensive therapy and monitoring; Percutaneous intervention includes drainage, embolization, or stenting; Surgical decompression includes open or laparoscopic capsulotomy; Urological intervention includes ureteral stenting or nephrostomy; Vascular intervention includes angioplasty or bypass procedures.",
+      format = "html",
+      na = "NR",
+      table.attr = "style='font-size:12.5px'") %>%
+  kable_styling(
+    bootstrap_options = c("striped", "hover", "condensed", "responsive"),
+    full_width = FALSE,
+    position = "left"
+  ) %>%
+  column_spec(1, bold = TRUE, width = "12em") %>%  # Reference column
+  column_spec(5, width = "15em") %>%  # Past Medical History
+  column_spec(8, width = "15em") %>%  # Signs & Symptoms
+  column_spec(15, width = "12em")     # Treatment
+
+```
 ```

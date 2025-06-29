@@ -1,0 +1,25 @@
+"reference","year","age","gender","pmh","onset.y","mechanism","ss","hypertension","ua","grade","size.cm","page.type","laterality","treatment","fu.status","fu.y"
+"Aragona_1991",1991,25,"m",NA,9,"mvc","Asymptomatic; Hypertension",TRUE,"Negative",NA,6.6,"hematoma","left","Surgical_Decompression",TRUE,3
+"Babel_2010",2010,89,"m","Hypertension; Diabetes; Chronic renal insufficiency; Coronary artery disease",0.25,"fall",NA,TRUE,NA,NA,15,"hematoma","left","Conservative",TRUE,0.75
+"Boggi_1998",1998,15,"m","Congenital kidney anomaly",0.333333333,"blunt",NA,TRUE,NA,NA,NA,"hematoma","right","Perc_IR",TRUE,9
+"Kumar_2015",2015,66,"m","Renal transplant; Diabetes; Neuropathy",0.008219178,"fall","Chest Pain; Hypertension",TRUE,"Negative",NA,11,"hematoma","allograft right","Perc_IR; Surgical_Decompression",TRUE,0.008219178
+"Lin_2020",2019,46,"f",NA,0.166666667,"blunt",NA,TRUE,NA,NA,15,"hematoma","left","Perc_IR",TRUE,0.25
+"Marcou_2021",2021,16,"m",NA,0.01642711,"mvc",NA,TRUE,NA,"V",NA,"hematoma","right","Urologic",TRUE,0.4166667
+"Massumi_1969",1969,16,"m",NA,0.008219178,"fall","Hematuria; Flank pain; Hypertension",TRUE,"Positive",NA,NA,"hematoma","right","Conservative",TRUE,0.5
+"Matlaga_2002",2002,16,"m",NA,NA,"blunt","Flank pain; Hypertension; Hematuria",TRUE,"Positive",NA,NA,"urinoma","bilateral","Urologic",TRUE,0.333333333
+"Mattson_2021",2021,31,"m","Seizure disorder",0.038461538,"blunt",NA,FALSE,NA,NA,NA,"hematoma","left","Perc_IR; Vascular",TRUE,0.083333333
+"Minagawa_2009",2009,17,"m",NA,0.08,"blunt","Flank pain; Hematuria; Hypertension",TRUE,"Positive",NA,NA,"lymphocele","right","Perc_IR; Surgical_Decompression",TRUE,1.5
+"Moriarty_1997",1997,16,"m",NA,1,"mvc",NA,TRUE,NA,NA,7,"hematoma","left","Surgical_Decompression",TRUE,3.166666667
+"Mullins_1975",1975,17,"m",NA,1,"blunt","Headache; Back pain; Flank pain; Fatigue; Hypertension",TRUE,"Negative",NA,11,"hematoma","right","Nephrectomy",NA,NA
+"Murray_2010",2010,48,"m",NA,0,"fall","Flank pain; Hematuria; Hypertension",TRUE,"Positive",NA,NA,"hematoma","left","Nephrectomy",TRUE,NA
+"Myrianthefs_2007",2007,24,"m",NA,0.021917808,"mvc","Abdominal pain; Abdominal distension; Hematuria",FALSE,"Positive",NA,NA,NA,"right","Conservative",TRUE,1
+"Oliveira_2003",2003,23,"m",NA,3,"blunt","Flank pain; Ecchymosis; Hypertension",TRUE,"Negative",NA,7.5,"hematoma","left","Nephrectomy",TRUE,1
+"Pan_2020",2020,34,"m","Diabetes; Renal transplant; Pancreas transplant",0.083333333,"blunt",NA,TRUE,NA,NA,7.4,"hematoma","allograft left","Surgical_Decompression",TRUE,1
+"Sedigh_2017",2017,67,"m","Renal transplant",0.041666667,"blunt",NA,FALSE,NA,NA,4,"hematoma","allograft right","Surgical_Decompression",TRUE,0.024657534
+"Sokhal_2018",2018,24,"m",NA,6,"mvc",NA,TRUE,NA,NA,18,"hematoma","left","Nephrectomy",TRUE,0.019178082
+"Sokhal_2018",2018,21,"m",NA,2,"fall","Flank pain; Palpitations; Headache; Hypertension",TRUE,"Negative",NA,12,"hematoma","right","Nephrectomy",TRUE,0.25
+"Takahashi_2017",2017,67,"m","Renal transplant",0.019178082,"blunt","Abdominal pain; Hypertension",TRUE,"Negative","II",12,"hematoma","allograft left","Surgical_Decompression",TRUE,NA
+"Tuong_2016",2016,9,"m","Congenital kidney anomaly",0.016438356,"blunt","Abdominal pain; Hematuria; Hypertension",TRUE,"Positive","IV",NA,"hematoma","left","Surgical_Decompression",TRUE,0.083333333
+"Reference",2023,54,"m",NA,0.010958904,"mvc","Back pain; Abdominal pain; Hypertension; Hematuria",TRUE,"Positive",NA,NA,"hematoma","bilateral","Surgical_Decompression",TRUE,0.166666667
+"Koyanagawa_2024",2024,26,"m","Asthma; Fracture; Substance use",0.003,"blunt","Flank pain; Vomiting; Hypertension",TRUE,"Positive",NA,12,"hematoma","right","Vascular",TRUE,NA
+"Lind_2024",2024,54,"m","Sleep apnea; Hypertension",0.003,"fall",NA,TRUE,NA,NA,NA,"hematoma","left","Perc_IR",TRUE,0.037037037
