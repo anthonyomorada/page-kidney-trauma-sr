@@ -2,19 +2,72 @@
 __pycache__/
 *.py[cod]
 *.ipynb_checkpoints
+*.pyc
+*.pyo
+*.egg-info/
+dist/
+build/
 
-# Docs & Manuscript
+# R
+.Rproj.user/
+.Rhistory
+.RData
+.Ruserdata
+*.Rproj
+
+# Jupyter Notebooks
+*.ipynb_checkpoints
+
+# Documentation & Manuscript drafts (keep final versions)
 *.docx
-*.pdf
 *.log
 *.aux
 *.out
 *.bbl
 *.blg
 *.synctex.gz
+*.fdb_latexmk
+*.fls
+*.toc
+*.lof
+*.lot
 
-# System
+# System files
 .DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
 Thumbs.db
+
+# IDE and Editor files
+.vscode/
+.obsidian/
+.idea/
+*.swp
+*.swo
+*~
+
+# Environment and configuration
 .env
-.Rproj.user
+.env.local
+.env.*.local
+*.key
+
+# Temporary files
+*.tmp
+*.temp
+*.bak
+*.backup
+
+# Personal notes and scratch files
+scratch/
+personal_notes/
+todo.md
+notes.txt
+
+# Large data files (if any)
+*.zip
+*.tar.gz
+*.rar
