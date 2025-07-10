@@ -1,8 +1,9 @@
-md-to-docx-conversion.sh
 #!/bin/bash
 
 # Set template relative to current location
 TEMPLATE_PATH="jtacs_template.docx"
+BIBLIO_PATH="page-kidney-trauma-sr.bib"        # 👈 your Zotero-exported .bib file
+CSL_STYLE="ama.csl"                # 👈 optional: use a citation style file
 
 # List of markdown files to convert
 FILES=(
@@ -21,9 +22,11 @@ do
 
   pandoc "$INPUT_PATH" \
     -f markdown+tex_math_single_backslash \
-    -o "$OUTPUT_PATH" \
+    --citeproc \
+    --bibliography="$BIBLIO_PATH" \
+    --csl="$CSL_STYLE" \
     --reference-doc="$TEMPLATE_PATH" \
-    --pdf-engine=pdflatex
+    -o "$OUTPUT_PATH"
 done
 
-echo "✅ All conversions complete!"
+echo "✅ All conversions complete with citations!"

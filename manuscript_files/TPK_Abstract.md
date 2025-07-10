@@ -14,16 +14,16 @@ geometry: margin=1in
 ## Abstract
 
 **Background:**  
-Page kidney is a rare but clinically significant phenomenon characterized by hypertension secondary to renal parenchymal compression from subcapsular hematoma or urinoma. Although trauma is a known cause, literature on its surgical management remains sparse. This systematic review aims to consolidate current evidence on traumatic Page kidney (TPK) and highlight a novel case of bilateral involvement managed surgically.
+Page kidney, also known as the Page phenomenon, is a rare but clinically significant cause of secondary hypertension, typically resulting from subcapsular or perinephric hematoma that compresses the renal parenchyma. This compression leads to ischemia, activating the renin-angiotensin-aldosterone system (RAAS). Although trauma is a well-established cause, literature specifically addressing traumatic Page kidney (TPK) remains sparse. We conducted a systematic review focused on trauma-induced cases and report what we believe to be the first documented instance of bilateral TPK treated with bilateral surgical decompression.
 
 **Methods:**  
-We conducted a systematic review of PubMed, Embase, and JBI Evidence-Based Practice databases on March 21, 2023, using the term "Page kidney" in the context of trauma. Two independent reviewers screened 119 abstracts, ultimately including 31 studies that met pre-defined inclusion criteria. Extracted data included patient demographics, trauma mechanism, laterality, clinical presentation, imaging findings, interventions, and outcomes.
+Following PRISMA guidelines, we systematically searched PubMed, Embase, Web of Science, and Medline for studies published up to March 21, 2023, using the term "Page kidney" and filtering for traumatic etiologies. Two reviewers independently screened 119 abstracts, ultimately including 31 articles. Extracted variables included mechanism of trauma, laterality, imaging, clinical presentation, interventions, and renal outcomes.
 
 **Results:**  
-Among the 24 cases, left-sided TPK was most common. A significant proportion involved renal allografts. Hypertension was the most frequent presenting symptom, though time to onset varied widely. Most patients required surgical intervention, including nephrectomy, hematoma evacuation, or capsulotomy, with favorable outcomes and no reported mortalities. Our case—a 54-year-old male with bilateral perinephric hematomas post-MVA—experienced worsening hypertension, acute kidney injury, and eventual anuria. Bilateral Gerota’s fascia release led to resolution of symptoms and return of urinary function.
+We identified 24 trauma-related Page kidney cases. Blunt trauma, including motor vehicle collisions and sports injuries, was the most common etiology. Iatrogenic trauma accounted for nearly one-third of cases. Left-sided involvement predominated, and many cases occurred in renal allografts. Surgical management—most commonly hematoma evacuation or capsulotomy—was frequently required and generally resulted in clinical improvement. Our index case involved a 54-year-old man who developed bilateral perinephric hematomas and subsequent anuria following blunt trauma. Bilateral Gerota’s fascia release was performed, resulting in full restoration of urine output and resolution of hypertension.
 
 **Conclusions:**  
-This is the first reported case of traumatic bilateral Page kidney managed with bilateral Gerota’s fascia release. Our review highlights the predominance of left-sided involvement, common association with transplant kidneys, and the success of surgical management in resolving TPK. Early recognition and intervention are essential to avoid renal morbidity and the need for dialysis.
+Bilateral traumatic Page kidney is exceedingly rare. Our case represents the first known instance of bilateral Gerota’s fascia release for TPK. The literature supports early recognition and surgical intervention for optimal renal recovery. Traumatic Page kidney, while uncommon, should be considered in trauma patients presenting with hypertension, AKI, or delayed renal decline.
 
 **Level of Evidence:**  
 Level IV, Therapeutic/Care Management

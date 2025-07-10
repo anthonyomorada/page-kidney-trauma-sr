@@ -53,11 +53,6 @@ This paper was [not] presented at any scientific meeting.
 Funding Disclosure:
 This research received no external funding.
 
-Social Media Summary:
-Media Summary: A review of traumatic Page kidney reveals hypertension as a common symptom and highlights surgical management outcomes, with our case being the first bilateral example. 
-Hashtags: #TraumaSurgery #PageKidney #RenalTrauma
-Author/Institution Social Media: @anthonymorada, @GeisingerHealth
-
 ## Author Contributions
 
 Conception and Study design: AB, CD, EF  

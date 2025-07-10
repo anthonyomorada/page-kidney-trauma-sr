@@ -1027,8 +1027,6 @@ df <- df %>%
     fu.status, fu.y
   )
 
-# Export cleaned data
-write.csv(df, "data/tpk-table.csv", row.names = FALSE)
 
 # Cleaning workspace
 rm(list = setdiff(ls(), "df"))
@@ -1198,5 +1196,7 @@ kable(table1,
   column_spec(8, width = "15em") %>%  # Signs & Symptoms
   column_spec(15, width = "12em")     # Treatment
 
-```
+write.csv(df, "data/tpk-table.csv", row.names = FALSE)
+write.csv(table1, "data/table1.csv", row.names = FALSE)
+
 ```
