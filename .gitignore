@@ -7,16 +7,26 @@ __pycache__/
 *.egg-info/
 dist/
 build/
+.pytest_cache/
+*.so
 
-# R
+# R - Enhanced R ignore patterns
 .Rproj.user/
 .Rhistory
 .RData
 .Ruserdata
 *.Rproj
+.Rapp.history
+.Rprofile
+*_cache/
+/cache
+*.utf8.md
+*.knit.md
+.Renviron
 
 # Jupyter Notebooks
 *.ipynb_checkpoints
+.ipynb_checkpoints/
 
 # Documentation & Manuscript drafts (keep final versions)
 *.docx
@@ -31,6 +41,10 @@ build/
 *.toc
 *.lof
 *.lot
+*.tex~
+*.fls
+*.figlist
+*.makefile
 
 # System files
 .DS_Store
@@ -40,6 +54,7 @@ build/
 .Trashes
 ehthumbs.db
 Thumbs.db
+Icon?
 
 # IDE and Editor files
 .vscode/
@@ -48,26 +63,48 @@ Thumbs.db
 *.swp
 *.swo
 *~
+.sublime-*
 
 # Environment and configuration
 .env
 .env.local
 .env.*.local
 *.key
+.envrc
 
 # Temporary files
 *.tmp
 *.temp
 *.bak
 *.backup
+*~
 
 # Personal notes and scratch files
 scratch/
 personal_notes/
 todo.md
 notes.txt
+NOTES.md
 
 # Large data files (if any)
 *.zip
 *.tar.gz
 *.rar
+*.gz
+*.7z
+
+# Academic/Research specific
+# Raw data files (uncomment if you have large datasets)
+# data/raw/
+# data/processed/large_files/
+
+# Generated files
+figures/*.pdf
+figures/*.png
+figures/*.jpg
+manuscript_files/generated/
+
+# Package manager files
+node_modules/
+package-lock.json
+yarn.lock
