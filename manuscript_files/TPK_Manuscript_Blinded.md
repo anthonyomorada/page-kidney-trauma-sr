@@ -1,15 +1,14 @@
 ---
-title: "Traumatic Page Kidney: A Systematic Review and First Report of Bilateral Surgical Decompression"
-output: 
+title: "Traumatic Page Kidney: A Systematic Review and Case Report of Bilateral Gerota's Fascia Release"
+output:
   word_document:
-    reference_doc: "/Users/anthonymorada/Documents/GitHub/page-kidney-trauma-sr/manuscript_files/jtacs_template.docx"
+    reference_doc: /Users/anthonymorada/Documents/GitHub/page-kidney-trauma-sr/manuscript_files/jtacs_template.docx
 fontsize: 12pt
-mainfont: "Times New Roman"
+mainfont: Times New Roman
 linestretch: 2
 geometry: margin=1in
 bibliography: manuscript_files/TPK_Manuscript_Blinded.md
 csl: manuscript_files/ama.csl
-
 ---
 # Background
 
