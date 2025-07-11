@@ -11,6 +11,9 @@ FILES=(
   "TPK_Abstract.md"
   "TPK_Manuscript_Blinded.md"
   "TPK_CoverLetter.md"
+  "SDC1-SearchStrategy.md"
+  "SDC2-ReviewerWorksheet.md"
+  "SDC3-DataDictionary.md"
 )
 
 # Loop through and convert each file
