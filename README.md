@@ -2,7 +2,7 @@
 
 [![DOI](https://img.shields.io/badge/DOI-pending-lightgrey)](https://github.com/anthonyomorada/page-kidney-trauma-sr) [![License](https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/) [![PRISMA](https://img.shields.io/badge/PRISMA-2020-blue)](http://www.prisma-statement.org/)
 
-**Authors**: Anthony Onde Morada, MD; Andrew C. Droney, DO; David Matera, DO; Richard Lopez, DO  
+**Authors**: Anthony Onde Morada, MD
 **Institution**: Geisinger Wyoming Valley Medical Center, Wilkes-Barre, Pennsylvania
 
 ## 📚 About This Repository
