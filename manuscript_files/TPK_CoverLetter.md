@@ -16,7 +16,7 @@ Geisinger Wyoming Valley Medical Center
 Wilkes Barre, PA 18711
 anthonyomorada@gmail.com
 
-July 10, 2025
+July 18, 2025 
 
 Editorial Office
 Journal of Trauma and Acute Care Surgery

@@ -11,7 +11,7 @@
 
 <meta name="author" content="Anthony Onde Morada, MD" />
 
-<meta name="date" content="2025-06-29" />
+<meta name="date" content="2025-07-16" />
 
 <title>Trauma-Associated Page Kidney: A Systematic Review and Data Analysis</title>
 
@@ -1848,7 +1848,7 @@ display: none;
 <h1 class="title toc-ignore">Trauma-Associated Page Kidney: A Systematic
 Review and Data Analysis</h1>
 <h4 class="author">Anthony Onde Morada, MD</h4>
-<h4 class="date">June 29, 2025</h4>
+<h4 class="date">July 16, 2025</h4>
 
 </div>
 
@@ -1911,7 +1911,9 @@ library(kableExtra)
 library(stringr)
 library(tidyr)
 library(glue)
-library(ggplot2)</code></pre>
+library(ggplot2)
+library(flextable)
+library(officer)</code></pre>
 </div>
 <div id="data-loading-and-preprocessing" class="section level1">
 <h1>Data Loading and Preprocessing</h1>
@@ -4245,12 +4247,10 @@ df &lt;- df %&gt;%
     hypertension,
     ua = ua_result,
     grade, size.cm, page.type, laterality,
-    treatment = treatment_summary,
+    treatment = treatment_summary, 
     fu.status, fu.y
   )
 
-# Export cleaned data
-write.csv(df, &quot;data/tpk-table.csv&quot;, row.names = FALSE)
 
 # Cleaning workspace
 rm(list = setdiff(ls(), &quot;df&quot;))</code></pre>
@@ -5758,7 +5758,41 @@ Alive
 </tr>
 </tbody>
 </table>
-<p>```</p>
+<pre class="r"><code>write.csv(df, &quot;data/tpk-table.csv&quot;, row.names = FALSE)
+write.csv(table1, &quot;data/table1.csv&quot;, row.names = FALSE)</code></pre>
+<pre class="r"><code>table_for_pub &lt;- table1 %&gt;%
+  mutate(Year = as.numeric(gsub(&quot;[^0-9]&quot;, &quot;&quot;, as.character(Year)))) %&gt;%
+  arrange(Year) %&gt;%
+  select(
+    Reference,
+    Year,
+    Age,
+    Gender,
+    `Injury Mechanism`,
+    `Size (cm)`,
+    `Page Kidney Type`,
+    Laterality,
+    Treatment,
+    `Follow-up Duration`
+  )
+
+ft &lt;- flextable(table_for_pub) %&gt;%
+  set_header_labels(
+    Reference          = &quot;Reference&quot;,
+    Year               = &quot;Year&quot;,
+    Age                = &quot;Age&quot;,
+    Gender             = &quot;Gender&quot;,
+    `Injury Mechanism` = &quot;Mechanism&quot;,
+    `Size (cm)`        = &quot;Size&quot;,
+    `Page Kidney Type` = &quot;PK Type&quot;,
+    Laterality         = &quot;Laterality&quot;,
+    Treatment          = &quot;Treatment&quot;,
+    `Follow-up Duration` = &quot;F/U Time&quot;
+  ) %&gt;%
+  colformat_double(j = &quot;Year&quot;, digits = 0, big.mark = &quot;&quot;) %&gt;%
+  fontsize(size = 8, part = &quot;all&quot;) %&gt;%
+  autofit() %&gt;%
+  set_table_properties(width = 1)</code></pre>
 </div>
 
 

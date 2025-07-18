@@ -140,76 +140,22 @@ Traumatic Page kidney represents a rare but reversible cause of secondary hypert
 ::: {#refs}
 :::
 
-# Tables
+# Table Legends
 
 **Table 1. Characteristics of Traumatic Page Kidney Cases in Systematic Review.** Abbreviations: M = male; F = female; HTN = hypertension; DM = diabetes mellitus; CKD = chronic kidney disease; CAD = coronary artery disease; Tx = transplant; OSA = obstructive sleep apnea; MVC = motor vehicle collision; NR = not reported; UA = urinalysis; HA = headache; Abd = abdominal; Perc = percutaneous; R = right; L = left
 
-<!-- TABLE 1 - CONVERT TO LANDSCAPE IN WORD -->
-
-| Reference                                                       | Year | Age | Sex | Past Medical History            | Time to Diagnosis | Mechanism | Clinical Presentation               | HTN | UA       | Grade | Size (cm) | Type       | Laterality    | Treatment              | Follow-up (years) | Outcome  |
-| --------------------------------------------------------------- | ---- | --- | --- | ------------------------------- | ----------------- | --------- | ----------------------------------- | --- | -------- | ----- | --------- | ---------- | ------------- | ---------------------- | ----------------- | -------- |
-| [@massumiArterialHypertensionTraumatic1969]Massumi et al.       | 1969 | 16  | M   | None                            | 3 days            | Fall      | Hematuria, flank pain, HTN          | Yes | Positive | NR    | NR        | Hematoma   | Right         | Conservative           | 0.5               | Survived |
-| [@grimUnilateralPageKidney1975a] Grim et al.                    | 1975 | 17  | M   | None                            | 1 year            | Blunt     | HA, back pain, flank pain, fatigue  | Yes | Normal   | NR    | 11        | Hematoma   | Right         | Nephrectomy            | NR                | NR       |
-| [@aragonaPageKidneyCurable1991]Aragona et al.                   | 1991 | 25  | M   | None                            | 9 years           | MVC       | Asymptomatic; HTN                   | Yes | Normal   | NR    | 6.6       | Hematoma   | Left          | Surgical decompression | 3                 | Survived |
-| [@moriartyCapsulectomyCurePage1997]Moriarty et al.              | 1997 | 16  | M   | None                            | 1 year            | MVC       | NR                                  | Yes | NR       | NR    | 7         | Hematoma   | Left          | Surgical decompression | 3.2               | Survived |
-| [@ugoboggiRenalHypertensionDue1997]Boggi et al.                 | 1998 | 15  | M   | Congenital anomaly              | 4 months          | Blunt     | NR                                  | Yes | NR       | NR    | NR        | Hematoma   | Right         | Percutaneous drainage  | 9                 | Survived |
-| [@matlagaSubcapsularUrinomaUnusual2002]Matlaga et al.           | 2002 | 16  | M   | None                            | NR                | Blunt     | Flank pain, HTN, hematuria          | Yes | Positive | NR    | NR        | Urinoma    | Bilateral     | Ureteral stent         | 0.33              | Survived |
-| [@oliveira23yearoldManHypertension2002]Oliveira et al.          | 2003 | 23  | M   | None                            | 3 years           | Blunt     | Flank pain, ecchymosis, HTN         | Yes | Normal   | NR    | 7.5       | Hematoma   | Left          | Nephrectomy            | 1                 | Survived |
-| [@myrianthefsResolutionPageKidneyrelated2007]Myrianthefs et al. | 2007 | 24  | M   | None                            | 8 days            | MVC       | Abd pain, distension, hematuria     | No  | Positive | NR    | NR        | NR         | Right         | Conservative           | 1                 | Survived |
-| [@minagawaTraumaticSubcapsularRenal2009]Minagawa et al.         | 2009 | 17  | M   | None                            | 29 days           | Blunt     | Flank pain, hematuria, HTN          | Yes | Positive | NR    | NR        | Lymphocele | Right         | Perc + surgical        | 1.5               | Survived |
-| [@babelPageKidneyPhenomenon2010]Babel et al.                    | 2010 | 89  | M   | HTN, DM, CKD, CAD               | 3 months          | Fall      | NR                                  | Yes | NR       | NR    | 15        | Hematoma   | Left          | Conservative           | 0.75              | Survived |
-| [@kumarPageKidneyRenal2015]Kumar et al.                         | 2015 | 66  | M   | Renal Tx, DM, neuropathy        | 3 days            | Fall      | Chest pain; HTN                     | Yes | Normal   | NR    | 11        | Hematoma   | Allograft (R) | Perc + surgical        | 0.08              | Survived |
-| [@tuongAcutePageKidney2016]Tuong et al.                         | 2016 | 9   | M   | Congenital anomaly              | 6 days            | Blunt     | Abd pain, hematuria, HTN            | Yes | Positive | II    | NR        | Hematoma   | Left          | Surgical decompression | 0.08              | Survived |
-| [@sedighSubcapsularHematomaCausing2017]Sedigh et al.            | 2017 | 67  | M   | Renal Tx                        | 15 days           | Blunt     | NR                                  | No  | NR       | NR    | 4         | Hematoma   | Allograft (R) | Surgical decompression | 0.25              | Survived |
-| [@takahashiAllograftLossAcute2017]Takahashi et al.              | 2017 | 67  | M   | Renal Tx                        | 7 days            | Blunt     | Abd pain, HTN                       | Yes | Normal   | I     | 12        | Hematoma   | Allograft (L) | Surgical decompression | NR                | Survived |
-| [@sokhalPageKidneyRare2018]Sokhal et al. (Case 1)               | 2018 | 24  | M   | None                            | 6 years           | MVC       | NR                                  | Yes | NR       | NR    | 18        | Hematoma   | Left          | Nephrectomy            | 0.17              | Survived |
-| [@sokhalPageKidneyRare2018]Sokhal et al. (Case 2)               | 2018 | 21  | M   | None                            | 2 years           | Fall      | Flank pain, palpitations, HA        | Yes | Normal   | NR    | 12        | Hematoma   | Right         | Nephrectomy            | 0.25              | Survived |
-| [@linAcutePageKidney2020]Lin et al.                             | 2020 | 46  | F   | None                            | 2 months          | Blunt     | NR                                  | Yes | NR       | NR    | 15        | Hematoma   | Left          | Percutaneous drainage  | 0.25              | Survived |
-| [@panPageKidneyPhenomenon2020]Pan et al.                        | 2020 | 34  | M   | DM, renal/pancreas Tx           | 30 days           | Blunt     | NR                                  | Yes | NR       | NR    | 7.4       | Hematoma   | Allograft (L) | Surgical decompression | 1                 | Survived |
-| [@marcouBluntRenalTraumainduced2021]Marcou et al.               | 2021 | 16  | M   | None                            | 6 days            | MVC       | NR                                  | Yes | NR       | III   | NR        | Hematoma   | Right         | Ureteral stent         | 0.42              | Survived |
-| [@jamesmattsonFlyingKneesVarices2021]Mattson et al.             | 2021 | 31  | M   | Seizure disorder                | 14 days           | Blunt     | NR                                  | No  | NR       | NR    | NR        | Hematoma   | Left          | Perc + vascular        | 0.08              | Survived |
-| Present case                                                    | 2023 | 54  | M   | None                            | 4 days            | MVC       | Back pain, abd pain, HTN, hematuria | Yes | Positive | NR    | NR        | Hematoma   | Bilateral     | Surgical decompression | 0.17              | Survived |
-| [@koyanagawaRareCasePage2024]Koyanagawa et al.                  | 2024 | 26  | M   | Asthma, fracture, substance use | 1 day             | Blunt     | Flank pain, vomiting, HTN           | Yes | Positive | NR    | 12        | Hematoma   | Right         | Vascular intervention  | NR                | Survived |
-| [@lindExplorationHypertensionFollowing2024]Lind et al.          | 2024 | 54  | M   | OSA, HTN                        | 1 day             | Fall      | NR                                  | Yes | NR       | NR    | NR        | Hematoma   | Left          | Percutaneous drainage  | 0.33              | Survived |
-
-<!-- END LANDSCAPE TABLE -->
-
 **Table 2. Treatment Outcomes by Management Strategy.** †Time from trauma to Page kidney diagnosis; IQR = Interquartile range (25th–75th percentile). ‡Includes urologic stenting and vascular interventions. All patients survived through available follow-up period.
-
-| Treatment Strategy        | N (%)     | Mean Age (years) | Median Time to Diagnosis (IQR)† | Organ Preservation |
-| ------------------------- | --------- | ---------------- | ------------------------------- | ------------------ |
-| Conservative Management   | 3 (12.5%) | 43.0             | 8 days (3 days–3.0 months)      | Yes                |
-| Percutaneous Intervention | 6 (25.0%) | 38.2             | 22 days (1 day–2.0 months)      | Yes                |
-| Surgical Decompression    | 7 (29.2%) | 38.9             | 15 days (6 days–1.0 year)       | Yes                |
-| Nephrectomy               | 5 (20.8%) | 26.6             | 2.0 years (0 days–3.0 years)    | No                 |
-| Other Interventions‡      | 3 (12.5%) | 19.3             | 4 days (1 day–6 days)           | Yes                |
 
 **Table 3. Patient Characteristics by Time to Diagnosis.** \*Mann-Whitney U test. †Fisher's exact test. Delayed diagnosis (>30 days) associated with increased nephrectomy rate, approaching statistical significance (p = 0.09).
 
-| Characteristic               | Acute (≤30 days) n=13 | Delayed (>30 days) n=10 | P-value   |
-| ---------------------------- | --------------------- | ----------------------- | --------- |
-| Mean age (years)             | 38.1                  | 31.0                    | 0.45*     |
-| Male gender, n (%)           | 13 (100%)             | 9 (90%)                 | 0.43†     |
-| **Nephrectomy rate, n (%)**  | **1 (7.7%)**          | **4 (40.0%)**           | **0.09†** |
-| Bilateral involvement, n (%) | 1 (7.7%)              | 0 (0%)                  | >0.99†    |
-| Transplant recipients, n (%) | 2 (15.4%)             | 2 (20.0%)               | >0.99†    |
-
-**Table 4. Special Populations in Traumatic Page Kidney**.
-
-| Population                   | N (%)      | Mean Age (years) | Unique Considerations                              | Treatment Pattern                   |
-| ---------------------------- | ---------- | ---------------- | -------------------------------------------------- | ----------------------------------- |
-| Renal Transplant Recipients  | 4 (16.7%)  | 58.5             | Superficial location, immunosuppression            | Surgical decompression preferred    |
-| Bilateral Page Kidney        | 2 (8.3%)   | 35.0             | Risk of acute renal failure                        | Emergency surgical intervention     |
-| Pediatric Patients (<18y)    | 8 (33.3%)  | 15.3             | Growth considerations, organ preservation priority | Organ-preserving approaches favored |
-| Delayed Diagnosis (>30 days) | 10 (41.7%) | 31.0             | Higher risk of irreversible changes                | Nephrectomy rate: 40.0%             |
+**Table 4. Special Populations in Traumatic Page Kidney**. Population categories are not mutually exclusive. Transplant recipients showed increased vulnerability due to superficial graft positioning. Bilateral cases require emergency intervention to prevent renal failure. No nephrectomies were performed in pediatric patients. Delayed diagnosis was associated with higher nephrectomy rates (40.0% vs 7.7% in acute cases).
 
 # Figure Legends
 
 **Figure 1. Imaging of Traumatic Bilateral Page Kidney.**
 (A) Initial CT scan showing bilateral perinephric hematomas without active extravasation. (B) Repeat CT angiography on hospital day 4 demonstrating enlarging bilateral Zone II perinephric hematomas with mass effect on both kidneys. (C) Postoperative imaging confirming resolution of the perinephric collections and restored renal anatomy.
 
-**Figure 2. PRISMA Flow Diagram for Systematic Review of Traumatic Page Kidney.**
-Flow diagram depicting the identification, screening, eligibility assessment, and inclusion of studies according to PRISMA 2020 guidelines. The initial database search across PubMed, Embase, MEDLINE, and Web of Science yielded 119 articles. After duplicate removal using Rayyan software, 98 unique articles underwent title and abstract screening by two independent reviewers. Thirty-one articles met initial screening criteria and proceeded to full-text review. Following application of inclusion and exclusion criteria, 24 articles reporting individual cases of traumatic Page kidney were included in the final analysis. Reasons for exclusion during full-text review included: non-traumatic etiology (n=4), insufficient clinical detail for data extraction (n=2), duplicate patient reports (n=1), and inability to access full text despite contact attempts (n=0). A follow-up literature search conducted in April 2025 using identical methodology identified 2 additional eligible cases published between March 2023 and April 2025, bringing the total included cases to 26. All included studies underwent data extraction using a standardized form, with quality assessment based on completeness of clinical information and follow-up data. The flow diagram demonstrates the systematic and transparent approach used to identify and select relevant literature for this comprehensive review of traumatic Page kidney cases.
+**Figure 2. PRISMA Flow Diagram for Systematic Review of Traumatic Page Kidney.** Flow diagram depicting study identification, screening, and inclusion according to PRISMA 2020 guidelines. Database search yielded 119 articles, with 24 cases meeting inclusion criteria for traumatic Page kidney. Exclusions included non-traumatic etiology, insufficient clinical detail, and duplicate reports. A follow-up search in April 2025 identified 2 additional cases, resulting in 26 total included cases.
 
 **Figure 3. Evidence-Based Clinical Decision Algorithm for Traumatic Page Kidney.** This algorithm incorporates risk stratification based on systematic review findings, with high-risk factors including bilateral involvement, solitary kidney, transplant status, rising creatinine, and refractory hypertension. Conservative management success rates and escalation pathways are based on treatment patterns observed in the literature. The algorithm emphasizes organ preservation while ensuring timely intervention for high-risk cases.
 

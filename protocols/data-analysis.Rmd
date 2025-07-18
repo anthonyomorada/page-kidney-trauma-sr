@@ -54,6 +54,9 @@ library(stringr)
 library(tidyr)
 library(glue)
 library(ggplot2)
+library(flextable)
+library(officer)
+
 ```
 
 # Data Loading and Preprocessing
@@ -112,11 +115,11 @@ df <- df %>%
 
 **Dataset Processing Summary:**
 
-- Total references processed: `r nrow(df) + nrow(exdf)`
-- References excluded: `r nrow(exdf)` 
-- References included in analysis: `r nrow(df)`
-- Unique studies analyzed: `r length(unique(df$reference))`
-- Individual patients: `r nrow(df)`
+-   Total references processed: `r nrow(df) + nrow(exdf)`
+-   References excluded: `r nrow(exdf)`
+-   References included in analysis: `r nrow(df)`
+-   Unique studies analyzed: `r length(unique(df$reference))`
+-   Individual patients: `r nrow(df)`
 
 # Study Selection and Exclusions
 
@@ -141,11 +144,13 @@ exclusion_summary %>%
                 full_width = FALSE,
                 position = "center")
 ```
+
 **Total excluded references:** `r nrow(exdf)`
 
 **Excluded references:** `r paste(exdf$reference, collapse = ", ")`
 
 # Publication Patterns
+
 ```{r study-patterns}
 # Page Kidney Systematic Review: Publication Year Analysis
 # Load required libraries
@@ -1033,7 +1038,6 @@ rm(list = setdiff(ls(), "df"))
 
 ```
 
-
 # Table 1
 
 ```{r table1}
@@ -1198,5 +1202,47 @@ kable(table1,
 
 write.csv(df, "data/tpk-table.csv", row.names = FALSE)
 write.csv(table1, "data/table1.csv", row.names = FALSE)
+```
 
+```{r flextable}
+table_for_pub <- table1 %>%
+  mutate(Year = as.numeric(gsub("[^0-9]", "", as.character(Year)))) %>%
+  arrange(Year) %>%
+  select(
+    Reference,
+    Year,
+    Age,
+    Gender,
+    `Injury Mechanism`,
+    `Size (cm)`,
+    `Page Kidney Type`,
+    Laterality,
+    Treatment,
+    `Follow-up Duration`
+  )
+
+ft <- flextable(table_for_pub) %>%
+  set_header_labels(
+    Reference          = "Reference",
+    Year               = "Year",
+    Age                = "Age",
+    Gender             = "Gender",
+    `Injury Mechanism` = "Mechanism",
+    `Size (cm)`        = "Size",
+    `Page Kidney Type` = "PK Type",
+    Laterality         = "Laterality",
+    Treatment          = "Treatment",
+    `Follow-up Duration` = "F/U Time"
+  ) %>%
+  colformat_double(j = "Year", digits = 0, big.mark = "") %>%
+  fontsize(size = 8, part = "all") %>%
+  autofit() %>%
+  set_table_properties(width = 1)
+
+
+# Export to Word
+read_docx() %>%
+  body_add_par("Table X. Summary of Included Cases", style = "heading 1") %>%
+  body_add_flextable(ft) %>%
+  print(target = "page_kidney_table.docx")
 ```
