@@ -1,20 +1,19 @@
 ---
 title: "Traumatic Page Kidney: A Systematic Review and Case Report of Bilateral Gerota's Fascia Release"
 output:
-  word_document:
-    reference_doc: /Users/anthonymorada/Documents/GitHub/page-kidney-trauma-sr/manuscript_files/jtacs_template.docx
+  word_document: default
 fontsize: 12pt
 mainfont: Times New Roman
 linestretch: 2
 geometry: margin=1in
-bibliography: manuscript_files/TPK_Manuscript_Blinded.md
+bibliography: manuscript_files/page-kidney-trauma-sr.bib
 csl: manuscript_files/ama.csl
 ---
 # Background
 
 Page kidney is a rare but potentially serious secondary cause of hypertension initially described by Irvine Page in 1939 from mouse models.[@pageProductionPersistentArterial1939] The condition results from a subcapsular fluid collection that exerts enough compression to activate the renin-angiotensin-aldosterone system, leading to severe hypertension and renal dysfunction.[@engelHypertensionDueRenal1955] Although its pathophysiology resembles the experimental Goldblatt kidney model, Page kidney occurs through extrinsic rather than intrinsic vascular compression.[@goldblattSTUDIESEXPERIMENTALHYPERTENSION1934]
 
-The epidemiology of Page kidney has shifted considerably since it was first described. Early case series identified trauma as the primary cause, particularly sports injuries and car accidents.[@aragonaPageKidneyCurable1991;@massumiArterialHypertensionTraumatic1969;@moriartyCapsulectomyCurePage1997] However, more recent reports frequently cite iatrogenic causes, such as complications from renal biopsy and spontaneous hematomas due to anticoagulation, especially in transplant patients.[@kumarPageKidneyRenal2015;@panPageKidneyPhenomenon2020;takahashiAllograftLossAcute2017] This shift is attributed to improved protective gear for risky activities and the increasing use of kidney-related interventional procedures.
+The epidemiology of Page kidney has shifted considerably since it was first described. Early case series identified trauma as the primary cause, particularly sports injuries and car accidents.[@aragonaPageKidneyCurable1991;@massumiArterialHypertensionTraumatic1969;@moriartyCapsulectomyCurePage1997] However, more recent reports frequently cite iatrogenic causes, such as complications from renal biopsy and spontaneous hematomas due to anticoagulation, especially in transplant patients.[@kumarPageKidneyRenal2015;@panPageKidneyPhenomenon2020;@takahashiAllograftLossAcute2017] This shift is attributed to improved protective gear for risky activities and the increasing use of kidney-related interventional procedures.
 
 Bilateral Page kidney is an extremely rare form of this already uncommon condition. The simultaneous development of compressive perinephric collections in both kidneys creates a unique clinical challenge, as the usual compensatory mechanisms of the opposite kidney are lost.[@matlagaSubcapsularUrinomaUnusual2002] The limited literature suggests that bilateral involvement may occur in cases of anticoagulation, systemic vasculitis, or severe bilateral trauma, but a thorough analysis of these cases has been lacking.[@babelPageKidneyPhenomenon2010;@linAcutePageKidney2020;@myrianthefsResolutionPageKidneyrelated2007]
 
@@ -32,7 +31,7 @@ We conducted a comprehensive systematic literature review following PRISMA 2020 
 
 Two independent reviewers screened titles and abstracts based on predefined inclusion and exclusion criteria. Inclusion criteria included any case report or case series describing Page kidney secondary to trauma in human subjects with enough clinical detail for data extraction. Exclusion criteria covered iatrogenic Page kidney without related trauma, animal studies, review articles without original case data, and cases lacking sufficient clinical information for analysis. Blunt renal trauma was defined as a non-penetrating injury to the kidney caused by external mechanical forces, such as, but not limited to, motor vehicle accidents, falls from height, contact sports, physical assaults, and crush injuries, as opposed to iatrogenic injury from medical procedures. See SDC2: Reviewer Worksheet for further details. 
 
-Full-text articles were reviewed to select eligible studies, with disagreements resolved through consensus discussion. Data extraction was conducted using a standardized form that captured patient demographics, injury mechanisms, clinical presentation, diagnostic findings, treatment methods, and clinical outcomes (SDC 3: Data Dictionary). A follow-up literature search was performed in April 2025 to identify any additional cases published since the initial review. All data analysis was conducted using R statistical software, and the data and analysis are available on the following repository: github.com/anthonyomorada/page-kidney-trauma-sr/.
+Full-text articles were reviewed to select eligible studies, with disagreements resolved through consensus discussion. Data extraction was conducted using a standardized form that captured patient demographics, injury mechanisms, clinical presentation, diagnostic findings, treatment methods, and clinical outcomes (SDC 3: Data Dictionary). A follow-up literature search was performed in April 2025 to identify any additional cases published since the initial review. All data analysis was conducted using R statistical software, and the data and analysis are available at https://github.com/anthonyomorada/page-kidney-trauma-sr.
 
 # Results
 

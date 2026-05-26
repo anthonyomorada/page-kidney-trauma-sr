@@ -1,7 +1,6 @@
-# Python
+# Python caches/build artifacts
 __pycache__/
 *.py[cod]
-*.ipynb_checkpoints
 *.pyc
 *.pyo
 *.egg-info/
@@ -10,7 +9,7 @@ build/
 .pytest_cache/
 *.so
 
-# R - Enhanced R ignore patterns
+# R local session and project state
 .Rproj.user/
 .Rhistory
 .RData
@@ -18,17 +17,26 @@ build/
 *.Rproj
 .Rapp.history
 .Rprofile
+.RDataTmp
+.Rproj.user
+.Rproj.user/
+.Rcheck/
+*.tar.gz
 *_cache/
 /cache
 *.utf8.md
 *.knit.md
 .Renviron
+.Renviron.local
+renv/library/
+renv/python/
+renv/staging/
 
-# Jupyter Notebooks
+# Jupyter notebooks
 *.ipynb_checkpoints
 .ipynb_checkpoints/
 
-# Documentation & Manuscript drafts (keep final versions)
+# R Markdown / LaTeX intermediate build files
 *.docx
 *.log
 *.aux
@@ -45,6 +53,10 @@ build/
 *.fls
 *.figlist
 *.makefile
+*.tex
+*.nav
+*.snm
+*.vrb
 
 # System files
 .DS_Store
@@ -69,6 +81,7 @@ Icon?
 .env
 .env.local
 .env.*.local
+*.env
 *.key
 .envrc
 
@@ -78,6 +91,8 @@ Icon?
 *.bak
 *.backup
 *~
+tmp/
+temp/
 
 # Personal notes and scratch files
 scratch/
@@ -85,24 +100,43 @@ personal_notes/
 todo.md
 notes.txt
 NOTES.md
+rough draft.md
+rough-draft*.md
+manuscript_files/rough-draft*.md
+
+# Local literature libraries and publisher PDFs
+manuscript_files/pdf-references/
+*head-neck-mets*.bib
+*.ris
+*.nbib
+
+# Journal submission/admin artifacts
+manuscript_files/*CoverLetter*
+manuscript_files/*TitlePage*
+manuscript_files/*coi_disclosure*
+manuscript_files/jtacs_template.docx
+manuscript_files/*template*.docx
 
 # Large data files (if any)
 *.zip
-*.tar.gz
 *.rar
 *.gz
 *.7z
 
 # Academic/Research specific
-# Raw data files (uncomment if you have large datasets)
-# data/raw/
-# data/processed/large_files/
+# Keep the small audit dataset tracked. Put non-shareable/raw exports here.
+data/raw/
+data/private/
+data/intermediate/
 
 # Generated files
 figures/*.pdf
 figures/*.png
 figures/*.jpg
 manuscript_files/generated/
+page_kidney_table.docx
+protocols/*_files/
+!protocols/data-analysis_files/
 
 # Package manager files
 node_modules/

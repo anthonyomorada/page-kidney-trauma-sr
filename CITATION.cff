@@ -1,0 +1,31 @@
+cff-version: 1.2.0
+message: "If you use this repository, please cite the published article."
+title: "Traumatic Page kidney: a systematic review and patient report of bilateral Gerota's fascia release"
+authors:
+  - family-names: Morada
+    given-names: Anthony Onde
+  - family-names: Kropp Lopez
+    given-names: Amalie
+  - family-names: Droney
+    given-names: Andrew
+  - family-names: Lopez
+    given-names: Richard
+doi: 10.1136/tsaco-2025-002041
+date-published: 2026
+url: "https://github.com/anthonyomorada/page-kidney-trauma-sr"
+preferred-citation:
+  type: article
+  title: "Traumatic Page kidney: a systematic review and patient report of bilateral Gerota's fascia release"
+  authors:
+    - family-names: Morada
+      given-names: Anthony Onde
+    - family-names: Kropp Lopez
+      given-names: Amalie
+    - family-names: Droney
+      given-names: Andrew
+    - family-names: Lopez
+      given-names: Richard
+  journal: "Trauma Surgery & Acute Care Open"
+  volume: 11
+  year: 2026
+  doi: 10.1136/tsaco-2025-002041
